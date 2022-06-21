@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+
+.dragging {
+  color:red;
+  background-color:black;
+}
+path,
+.MuiTypography-root {
+  color:#607B96;
+}
+.filter-label.MuiFormControlLabel-root {
+  display:flex;
+  padding-left:25px;
+}
+.filter-wrapper {
+  padding-top:20px;
+}
+
+.react-filter > .MuiFormControlLabel-label,
+.wp-filter > .MuiFormControlLabel-label {
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+.react-filter > .MuiFormControlLabel-label:before {
+  content:url('../src/assets/img/react-vector.svg');
+  margin-right:5px;
+  height:22px;
+}
+.wp-filter > .MuiFormControlLabel-label:before {
+  content:url('https://img.icons8.com/ios/20/607B96/wordpress--v1.png');
+  margin-right:5px;
+  height:22px;
+}
