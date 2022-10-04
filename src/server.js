@@ -7,7 +7,7 @@ import multer from 'multer'
 import cors from 'cors'
 
 mongoose.connect(
-    'mongodb+srv://nessaj:htrcfh98@cluster0.0cezso6.mongodb.net/blog?retryWrites=true&w=majority'
+    process.env.MONGODB_URI
 )
     .then(() => console.log('DB is ok'))
     .catch(err => {
@@ -49,7 +49,7 @@ app.post('/posts', checkAuth, postCreateValidator,postController.create)
 app.delete('/posts/:id', checkAuth, postController.remove)
 app.patch('/posts/:id', checkAuth, handleValidationErrors, postController.update)
 
-app.listen(4444, (err) => {
+app.listen(process.env.PORT || 4444, (err) => {
     if (err) {
         console.log(err)
     }
