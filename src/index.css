@@ -7,6 +7,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body[data-theme="dark"] {
+--colors-bg:#011627;
+--colors-second-bg:#000a12;
+--colors-code-bg:#011221;
+--colors-post-bg:#011221;
+--colors-post-link:#1C2B3A;
+--colors-text:#607B96;
+--colors-headings:white;
+--colors-input-bg:#011221;
+--snake-bg:linear-gradient(122deg, rgba(23,87,84,1) 0%, rgba(26,61,77,1) 35%);
+
+}
+
+body[data-theme="light"] {
+  --colors-bg:#f3f3f3;
+  --colors-second-bg:#ffcc33;
+  --colors-post-bg:white;
+  --colors-post-link:#ffcc33;
+  --colors-text:#4e4e4e;
+  --colors-headings:#4e4e4e;
+  --colors-input-bg:white;
+  --snake-bg:linear-gradient(122deg,hwb(39deg 79% 7%) 0%,rgb(206 215 221) 35%);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

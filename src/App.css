@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--colors-bg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -44,14 +44,14 @@
 }
 path,
 .MuiTypography-root {
-  color:#607B96;
+  color:var(--colors-text);
 }
 .filter-label.MuiFormControlLabel-root {
   display:flex;
   padding-left:25px;
 }
 .filter-wrapper {
-  padding-top:20px;
+  padding:20px 0;
 }
 
 .react-filter > .MuiFormControlLabel-label,
@@ -69,4 +69,54 @@ path,
   content:url('https://img.icons8.com/ios/20/607B96/wordpress--v1.png');
   margin-right:5px;
   height:22px;
+}
+.menu-btn.open > .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+  
+}
+.menu-btn.open > .menu-btn__burger:before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open > .menu-btn__burger:after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+#simplemde-editor-2-wrapper {
+  padding-top: 30px;
+}
+.EasyMDEContainer {
+  max-height:500px;
+  width:90%;
+  border:1px solid black;
+  padding:10px;
+  margin:0 auto;
+}
+.CodeMirror-line > span,
+.CodeMirror-line > span > * {
+  color:black;
+}
+.MuiFormControl-root.MuiTextField-root {
+  width:80%;
+  margin:0 auto;
+  border:1px solid white;
+  display:block;
+}
+.MuiFormControl-root.MuiFormControl-fullWidth.MuiTextField-root {
+  margin:15px auto !important; 
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
+.MuiInputLabel-root.MuiInputLabel-formControl {
+  color:white !important;
+}
+.mobile {
+  display:none;
+}
+@media (max-device-width:768px) {
+  .desktop {
+    display:none !important;
+  }
+  .mobile {
+    display:block;
+  }
 }

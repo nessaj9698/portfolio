@@ -1,13 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
-import mainReducer from './reducers/mainReducer'
+import aboutPageTabsReducer from './reducers/aboutPageTabsReducer'
 import aboutPageReducer from './reducers/aboutPageReducer'
 import filterReducer from './reducers/projectsFilterReducer'
+import blogPageReducer from './reducers/blogPageReducer'
 
 export const store = configureStore({
   reducer: {
-      main:mainReducer,
+      aboutPageTabs:aboutPageTabsReducer,
       aboutPage:aboutPageReducer,
-      filter:filterReducer
-      
+      filter:filterReducer,
+      blogPage:blogPageReducer
   },
 })

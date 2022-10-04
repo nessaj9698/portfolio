@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/core";
-import {setCodeExample} from '../redux/reducers/mainReducer'
+import {setCodeExample} from '../redux/reducers/aboutPageTabsReducer'
 import {setGitHubFileLink,setGitHubFileName} from '../redux/reducers/aboutPageReducer'
 
 let octokit = new Octokit()

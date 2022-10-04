@@ -10,7 +10,6 @@ export const filterSlice = createSlice({
   reducers: {
     setFilter: (state,action) => {
         let actionIndex = state.selectedFilters.indexOf(action.payload)
-        console.log(actionIndex)
         if (actionIndex < 0) {
             // Если элемента нет в массиве
             state.selectedFilters.push(action.payload)

@@ -9,14 +9,19 @@ bottom:0;
 display:flex;
 justify-content:space-between;
 border-top:1px solid #1E2D3D;
+border-bottom:1px solid #1E2D3D;
 width:100%;
 padding:15px 20px;
+z-index:99;
 & > div > p {
-    color:#607B96;
+    color:var(--colors-text);
 }
 & > div {
     display:flex;
     column-gap:30px;
+}
+@media (max-device-width:768px) {
+   position:static;
 }
 `
 
@@ -24,16 +29,16 @@ function Footer() {
     return (
         <StyledFooter>
             <div>
-                <p>find me in:</p>
-                <a href="">
+                <p>мои_соц_сети:</p>
+                <a href="https://t.me/nessaj9698">
                 <img src={Telegram} alt="" />
                 </a>
-                <a href="">
+                <a href="https://vk.com/roundnround">
                 <img src={VK} alt="" />
                 </a>
             </div>
             <div>
-                <p>@nessaj12</p>
+                <p><a href='https://github.com/nessaj9698'>@nessaj9698</a></p>
             </div>
         </StyledFooter>
     )

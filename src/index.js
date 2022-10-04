@@ -13,7 +13,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     <Provider store={store}>
       <Router>
         <DndProvider backend={HTML5Backend}>
@@ -21,7 +21,7 @@ root.render(
         </DndProvider>
       </Router>
     </Provider>
-  </React.StrictMode>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
