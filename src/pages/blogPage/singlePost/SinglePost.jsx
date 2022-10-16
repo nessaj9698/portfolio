@@ -40,7 +40,7 @@ function SinglePost() {
   return (
     <StyledPost>
         <div className="container">
-            <img src={`http://localhost:4444${imageURL}`} alt="" />
+            <img src={`${process.env.REACT_APP_API_URL}${imageURL}`} alt="" />
             <h1>{postTitle}</h1>
             {/* <p>{postContent}</p> */}
             <ReactMarkdown children={postContent}/>
