@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import SnakeGame from '../components/snake-game/SnakeGame'
 import Highlight from 'react-highlight'
-import arta from '../../node_modules/highlight.js/styles/arta.css'
+
 
 
 
