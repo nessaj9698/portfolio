@@ -7,9 +7,9 @@ import multer from 'multer'
 import cors from 'cors'
 
 mongoose.connect(
-    process.env.MONGODB_URI
+    'mongodb+srv://nessaj:htrcfh98@cluster0.0cezso6.mongodb.net/blog'
 )
-    .then(() => console.log('DB is ok'))
+    .then((res) => console.log(res))
     .catch(err => {
         console.log(err)
     })
