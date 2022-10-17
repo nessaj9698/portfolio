@@ -1,30 +1,12 @@
 import React from 'react'
-import Highlight from 'react-highlight'
-import arta from '../../../../../../node_modules/highlight.js/styles/arta.css'
-import styled from 'styled-components'
 import Tabs from '../../../../../components/tabs/Tabs'
+import CodeBlock from '../../../../../components/common/CodeBlock'
 
-const StyledSoftSkillsTab = styled.div`
-& {
-    padding-left:40px;
-    ul,li,p {
-        color: #607B96;
-        list-style:none;
-        padding-left:0;
-    }
-    ul {
-      margin-bottom:30px;
-    }
-    li {
-      padding-top:10px;
-    }
-}
-`
 
 function SoftSkillsTab() {
     return (
         <Tabs>
-            <Highlight
+            <CodeBlock
                 className='javascript'
             >
                 {`let softSkills = {
@@ -34,7 +16,7 @@ function SoftSkillsTab() {
                    скромность:undefined
                  }`}
 
-            </Highlight>
+            </CodeBlock>
             <p>/ **</p>
             <ul>Личностные навыки:
                 <li>* Усидчивость и упорство: пожалуй, важнейшие черты характера, которые я могу в себе отметить. Они очень помогли мне в процессе самообучения</li>

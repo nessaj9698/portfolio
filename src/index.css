@@ -34,4 +34,6 @@ body[data-theme="light"] {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    display:block;
+    margin:10px 0;
 }

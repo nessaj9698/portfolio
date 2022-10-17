@@ -1,19 +1,17 @@
 import React from 'react'
-import Highlight from 'react-highlight'
-import arta from '../../../../../../node_modules/highlight.js/styles/arta.css'
-import styled from 'styled-components'
 import Tabs from '../../../../../components/tabs/Tabs'
+import CodeBlock from '../../../../../components/common/CodeBlock'
 
 
 function CoursesTab() {
     return (
         <Tabs>
-            <Highlight
+            <CodeBlock
                 className='javascript'
             >
               const coursesCost = 0
 
-            </Highlight>
+            </CodeBlock>
             <p>/ **</p>
             <p>* Постигая азы веб разработки в целом и фронтенда в частности я изучил множество учебных материалов.</p>
             <p>* Из полноценных, запомнившихся курсов могу отметить:</p>

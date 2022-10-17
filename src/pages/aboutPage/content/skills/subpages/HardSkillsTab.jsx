@@ -1,40 +1,10 @@
 import React from 'react'
-import Highlight from 'react-highlight'
-import arta from '../../../../../../node_modules/highlight.js/styles/arta.css'
-import styled from 'styled-components'
 import {useDispatch} from 'react-redux'
 import fetchCodeExample from '../../../../../api/gitHubApi'
 import Tabs from '../../../../../components/tabs/Tabs'
+import CodeBlock from '../../../../../components/common/CodeBlock'
 
-const StyledHardSkillsTab = styled.div`
-& {
-    padding-left:40px;
-    ul,li,p {
-        color: #607B96;
-        list-style:none;
-        padding-left:0;
-    }
-    ul {
-      margin-bottom:30px;
-    }
-    li {
-      padding-top:10px;
-      
-    }
-    li.gh-link {
-      display:inline-block;
-      cursor:pointer;
-      position:relative;
-      border-bottom:1px solid #607B96;
-      margin-left:19px;
-        &:before {
-          content:"*";
-          position:absolute;
-          left:-19px;
-        }
-    }
-}
-`
+
 
 function HardSkillsTab() {
   const dispatch = useDispatch()
@@ -42,12 +12,12 @@ function HardSkillsTab() {
  
   return (
     <Tabs>
-        <Highlight
+        <CodeBlock
                 className='javascript'
             >
               let hardSkills = new Array('React','Redux','Git');
 
-            </Highlight>
+            </CodeBlock>
             <p>/ **</p>
             <ul>Мои основные навыки:
             <li>* HTML5</li>

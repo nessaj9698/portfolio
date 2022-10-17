@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useSelector} from 'react-redux'
-import Highlight from 'react-highlight'
+import CodeBlock from '../../../components/common/CodeBlock'
 import Links from './Links'
-import arta from '../../../../node_modules/highlight.js/styles/arta.css'
+
+
 
 
 const StyledCodeExample = styled.div`
@@ -32,12 +33,12 @@ grid-area:example;
 
 function CodeExample() {
     const code = useSelector(state => state.aboutPageTabs.codeExample)
-   
+
     return (
         <StyledCodeExample>
             <div>
                <p>// Нажмите на подчеркнутый текст, чтобы увидеть пример моего кода</p>
-               {code ? <div><Links/>  <Highlight className='javascript'>{atob(code)}</Highlight></div> : false}
+               {code ? <div><Links/>  <CodeBlock isLineNumber={true}>{atob(code)}</CodeBlock></div> : false}
               
            
             </div>

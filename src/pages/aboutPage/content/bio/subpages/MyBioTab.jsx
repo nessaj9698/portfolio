@@ -1,23 +1,20 @@
-import React, { useEffect, useState } from 'react'
-import Highlight from 'react-highlight'
-import arta from '../../../../../../node_modules/highlight.js/styles/arta.css'
-import styled from 'styled-components'
-import { Octokit } from '@octokit/core'
+import React from 'react'
 import Tabs from '../../../../../components/tabs/Tabs'
+import CodeBlock from '../../../../../components/common/CodeBlock'
+
+
 
 
 function MyBio() {
-
-    
     return (
         <Tabs>
            
-                <Highlight 
-                className='javascript'
+                <CodeBlock
+                className='language-js'
                 >
              const greetings = 'Здравствуйте!'
              
-                </Highlight>
+                </CodeBlock>
                 <p>/ **</p>
               <p>* Меня зовут Вадим и я занимаюсь веб разработкой с 2020 года.</p>
               <p>* Поначалу я, как и многие в этой профессии, разрабатывал сайты на Wordpress, продавая услуги на фриланс бирже.</p>

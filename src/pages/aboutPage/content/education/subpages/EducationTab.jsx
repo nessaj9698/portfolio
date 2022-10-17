@@ -1,27 +1,19 @@
-import React, { useEffect, useState } from 'react'
-import Highlight from 'react-highlight'
-import arta from '../../../../../../node_modules/highlight.js/styles/arta.css'
+import React from 'react'
 import styled from 'styled-components'
 import Tabs from '../../../../../components/tabs/Tabs'
+import CodeBlock from '../../../../../components/common/CodeBlock'
 
-const StyledEducationTab = styled.div`
-& {
-    padding-left:40px;
-    p {
-        color: #607B96;
-    }
-}
-`
+
 
 function EducationTab() {
   return (
     <Tabs>
-         <Highlight 
+         <CodeBlock
                 className='javascript'
                 >
              const education = 'Неоконченное высшее'
              
-                </Highlight>
+                </CodeBlock>
                 <p>/ **</p>
               <p>* В 2016 году я поступил в Уральский Федеральный университет на специальность инженер-нанотехнолог.</p>
               <p>* Проучившись там до 3 курса, я был вынужден бросить учёбу по обстоятельствам личного характера.</p>

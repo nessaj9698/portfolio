@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SnakeGame from '../components/snake-game/SnakeGame'
-import Highlight from 'react-highlight'
+import CodeBlock from '../components/common/CodeBlock'
 
 
 
@@ -69,13 +69,16 @@ function Homepage() {
                     <h3>Тимошин Вадим</h3>
                     <h1>Frontend разработчик</h1>
                     <h2>React, TypeScript, Git, etc.</h2>
-                    <Highlight className='javascript desktop'>
-                        <p>const githubLink = <a href='https://github.com/nessaj9698'>"https://github.com/nessaj9698"</a></p>
-                    </Highlight>
-                    <Highlight className='javascript mobile'>
-                        <a href='https://github.com/nessaj9698'>"https://github.com/nessaj9698"</a>
-                    </Highlight>
-
+                    <div className="desktop">
+                        <CodeBlock className='language-js desktop'>
+                            <p>const githubLink = <a href='https://github.com/nessaj9698'>"https://github.com/nessaj9698"</a></p>
+                        </CodeBlock>
+                    </div>
+                    <div className="mobile">
+                        <CodeBlock className='language-js mobile'>
+                            <a href='https://github.com/nessaj9698'>"https://github.com/nessaj9698"</a>
+                        </CodeBlock>
+                    </div>
                 </div>
 
                 <div className='desktop'>
