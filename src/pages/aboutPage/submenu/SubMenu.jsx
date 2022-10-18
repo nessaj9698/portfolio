@@ -44,9 +44,10 @@ export const StyledSubMenu = styled.div`
 @media (max-device-width:768px) {
     & {
         overflow-x:scroll;
-        border-right:1px solid #1E2D3D;
+        border:1px solid #1E2D3D;
+        margin:10px 0;
         max-width:100vw;
-        border:none;
+        
         div {
             border-right:unset;
             min-width:unset;

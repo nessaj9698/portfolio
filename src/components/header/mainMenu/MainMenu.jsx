@@ -40,6 +40,7 @@ z-index:99;
         width:95%;
         margin:0 auto;
         justify-content:space-between;
+        position:static;
     }
     & > a {
         padding-left:0;
@@ -73,7 +74,10 @@ const MainMenu = () => {
             />
 
             <MobileMenu
-                onClick={() => { setMobileMenuOpened(!isMobileMenuOpened) }}
+                // onClick={() => { 
+                //     setMobileMenuOpened(!isMobileMenuOpened) 
+                // }}
+                setMobileMenuOpened={() => {setMobileMenuOpened(!isMobileMenuOpened)}}
                 isMobileMenuOpened={isMobileMenuOpened}
             />
         </StyledMainMenu>

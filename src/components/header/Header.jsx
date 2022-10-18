@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import MainMenu from "./mainMenu/MainMenu";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
 
 const StyledHeader = styled.div`
@@ -23,6 +23,11 @@ border-bottom:1px solid #1E2D3D;
         }
     }
 @media (max-device-width:768px){
+    & {
+        width:90%;
+        margin:0 auto;
+        border-bottom:none;
+    }
     .pageNavi {
         display:none;
     }

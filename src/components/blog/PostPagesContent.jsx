@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 export const StyledPostPage = styled.div`
 & {
+    max-height:100vh;
+    overflow-y:scroll;
     width:100%;
     .content-inner {
         display:flex;

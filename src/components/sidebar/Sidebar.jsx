@@ -8,7 +8,7 @@ const StyledSidebar = styled.div`
 &  {
     border:1px solid #1E2D3D;
     border-top:none;
-    border-bottom:none;
+   
     .sidebar__title.contacts {
       border-top:1px solid #1E2D3D;
     }
@@ -38,6 +38,7 @@ const StyledSidebar = styled.div`
     .sidebar__title {
       padding:10px 25px;
       border-bottom: 1px solid #1E2D3D;
+      
       position:relative;
       &:before {
         content:url(${triangle});
@@ -47,6 +48,11 @@ const StyledSidebar = styled.div`
     }
   a {
     color:var(--colors-text);
+  }
+  @media (max-device-width:768px) {
+    .sidebar__title {
+      border-top:1px solid #1E2D3D;
+    }
   }
 `
 

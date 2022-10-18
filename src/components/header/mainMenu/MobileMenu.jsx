@@ -1,45 +1,47 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const StyledMobileMenu = styled.div`
     display:block;
     position:absolute;
-    height:100vh;
+    height:90vh;
     z-index:9;
     width:100vw;
     top:-102vh;
-    left:-10px;
+    left:-0;
     background-color:var(--colors-bg);
     transition:.3s linear;
 &.opened {
-top:185%;
+top:6%;
 }
     a {
         display:block;
         width:100% !important;
-        border-bottom:1px solid #1E2D3D;
+        border-top:1px solid #1E2D3D;
         color:var(--colors-text) !important;
         padding:15px;
     }
 
 `
 
-function MobileMenu({ isMobileMenuOpened, setMobileMenuOpened }) {
+function MobileMenu({ setMobileMenuOpened, isMobileMenuOpened  }) {
     return (
         <StyledMobileMenu className={isMobileMenuOpened === true ? 'opened' : ''}>
-            <Link to="/about"
+            <NavLink to="/about"
+            onClick={(e)=> {
+                setMobileMenuOpened()
+            }}
+            >_about-me</NavLink>
+            <NavLink to="/projects"
             onClick={()=> {setMobileMenuOpened()}}
-            >_about-me</Link>
-            <Link to="/projects"
+            >_projects</NavLink>
+              <NavLink to="/blog"
             onClick={()=> {setMobileMenuOpened()}}
-            >_projects</Link>
-              <Link to="/blog"
+            >_blog</NavLink>
+             <NavLink to="/contacts"
             onClick={()=> {setMobileMenuOpened()}}
-            >_blog</Link>
-             <Link to="/contacts"
-            onClick={()=> {setMobileMenuOpened()}}
-            >_contacts</Link>
+            >_contacts</NavLink>
         </StyledMobileMenu>
     )
 }

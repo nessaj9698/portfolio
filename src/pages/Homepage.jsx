@@ -53,6 +53,9 @@ pre > .mobile {
             width:90%;
         }
     }
+    & > div > div > h1 {
+        font-size: 54px;
+    }
     pre > .mobile {
         display:block;
     }
@@ -75,9 +78,9 @@ function Homepage() {
                         </CodeBlock>
                     </div>
                     <div className="mobile">
-                        <CodeBlock className='language-js mobile'>
-                            <a href='https://github.com/nessaj9698'>"https://github.com/nessaj9698"</a>
-                        </CodeBlock>
+                        <div className='language-js mobile'>
+                            <a href='https://github.com/nessaj9698'>https://github.com/nessaj9698</a>
+                        </div>
                     </div>
                 </div>
 

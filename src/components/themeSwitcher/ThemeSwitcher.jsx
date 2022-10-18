@@ -4,8 +4,10 @@ import { styled } from '@mui/material/styles';
 import { useState, useEffect } from 'react';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
+    zIndex:99,
     width: 62,
     height: 34,
+    marginLeft:20,
     padding: 7,
     '& .MuiSwitch-switchBase': {
       margin: 1,

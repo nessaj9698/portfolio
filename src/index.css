@@ -37,3 +37,7 @@ code {
     display:block;
     margin:10px 0;
 }
+
+pre {
+  max-width:100%;
+}

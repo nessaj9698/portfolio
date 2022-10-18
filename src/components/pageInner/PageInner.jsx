@@ -9,7 +9,9 @@ const StyledInnerPage = styled.div`
 @media (max-device-width:768px) {
     & {
        display:block;
-       position:relative
+       position:relative;
+       overflow-y:scroll;
+       height:87vh;
     }
 }
 `
