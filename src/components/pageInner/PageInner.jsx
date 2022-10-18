@@ -12,6 +12,7 @@ const StyledInnerPage = styled.div`
        position:relative;
        overflow-y:scroll;
        height:87vh;
+       width:100vw;
     }
 }
 `

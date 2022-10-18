@@ -25,6 +25,11 @@ const StyledEmptyContent = styled.div`
 @media (max-device-width:768px) {
     & {
        width:100%;
+       @media (max-device-height:780px) {
+        img {
+            display:none;
+        }
+       }
     }
 }
 `
