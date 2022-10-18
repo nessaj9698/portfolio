@@ -54,7 +54,7 @@ pre > .mobile {
         }
     }
     & > div > div > h1 {
-        font-size: 54px;
+        font-size: 46px;
     }
     pre > .mobile {
         display:block;
