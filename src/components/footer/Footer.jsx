@@ -23,6 +23,9 @@ z-index:99;
 @media (max-device-width:768px) {
    position:static;
    width:100vw;
+   div {
+    column-gap:20px;
+   }
 }
 `
 

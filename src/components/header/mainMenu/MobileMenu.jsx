@@ -13,7 +13,7 @@ const StyledMobileMenu = styled.div`
     background-color:var(--colors-bg);
     transition:.3s linear;
 &.opened {
-top:60px;
+top:52px;
 }
     a {
         display:block;

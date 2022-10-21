@@ -56,6 +56,18 @@ export const StyledFormPage = styled.div`
     }
     @media (max-device-width:768px) {
         height:unset;
+        form {
+            width:100%;
+        }
+        input, textarea {
+            width:90%;
+            margin:15px auto;
+        }
+        .input__title {
+            width:90%;
+            margin:0 auto;
+            color:inherit;
+        }
     }
 `
 
@@ -82,11 +94,11 @@ function ContactsPageContent() {
         <StyledFormPage>
             <h1>Свяжитесь со мной</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <label>_name<span>*</span>
+                <label><p className="input__title">_name<span>*</span></p>
                     <input {...register('name', { required: true })} placeholder="Имя" />
                     {errors.name && <p>Обязательное поле</p>}
                 </label>
-                <label>_email<span>*</span>
+                <label><p className="input__title">_email<span>*</span></p>
                     <input {...register('email', { 
                         required: 'Обязательное поле',
                         pattern: {
@@ -96,7 +108,7 @@ function ContactsPageContent() {
                         })} placeholder="Электронная почта" />
                     {errors.email && <p>{errors.email.message}</p>}
                 </label>
-                <label>_message
+                <label><p className="input__title">_message<span>*</span></p>
                     <textarea {...register('message')} placeholder="Текст сообщения" />
                 </label>
                
