@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Telegram from '../../assets/img/icons8-telegram-app-20.png'
-import VK from '../../assets/img/icons8-vk-circled-20.png'
+import Telegram from '../../assets/img/icons8-telegram-app-20.svg'
+import VK from '../../assets/img/icons8-vk-circled-20.svg'
 
 const StyledFooter = styled.div`
 position:absolute;

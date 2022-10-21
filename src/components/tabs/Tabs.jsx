@@ -31,6 +31,7 @@ const StyledTab = styled.div`
 @media (max-device-width:768px) {
     & {
         padding-left:0;
+        padding-bottom:20px;
     }
 }
 `
