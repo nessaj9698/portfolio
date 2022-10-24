@@ -41,3 +41,6 @@ code {
 pre {
   max-width:100%;
 }
+pre[class*="language-"] {
+  padding-left:0 !important;
+}
