@@ -88,6 +88,7 @@ function ContactsPageContent() {
             name:data.name,
             message:data.message
         })
+        setPending(true)
     };
 
     return (
