@@ -26,7 +26,7 @@ function BlogPageContent() {
                     <div className='projects-item'>
                         <p className='projects-item__title'>{post.title}</p>
                         <div className="post__logo-wrapper">
-                            <img src={`${process.env.REACT_APP_API_URL}${post.imageURL}`} alt="" />
+                            <img src={`${post.imageURL}`} alt="" />
 
 
                         </div>

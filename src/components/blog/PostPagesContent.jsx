@@ -9,7 +9,7 @@ export const StyledPostPage = styled.div`
     .content-inner {
         display:flex;
         flex-wrap:wrap;
-        min-height:80vh;
+        height:83vh;
         overflow-y:scroll;
         column-gap:30px;
         row-gap:60px;
