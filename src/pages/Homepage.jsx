@@ -78,7 +78,6 @@ function Homepage() {
     useEffect(()=> {
         axios.get('https://www.codewars.com/api/v1/users/nessaj9698')
         .then(response => {
-            console.log(response.data.ranks.overall.name)
             setKyu(response.data.ranks.overall.name)
         })
     }, [])
