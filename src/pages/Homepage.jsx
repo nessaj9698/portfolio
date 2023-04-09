@@ -1,30 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import SnakeGame from '../components/snake-game/SnakeGame'
 import CodeBlock from '../components/common/CodeBlock'
-
-
+import codewarsLogo from '../assets/img/codewars-logo.svg'
+import { useEffect } from 'react'
+import axios from 'axios'
 
 
 const StyledHomepage = styled.div`
 display:flex;
 height:100%;
 align-items:center;
-& > div > div > h3 {
+& h3 {
     font-size:18px;
     color:var(--colors-headings);
     margin:0;
     width:100%;
-    
 }
-& > div > div > h2 {
+& h2 {
     font-size:18px;
     color:#4D5BCE;
     margin-bottom:80px;
     margin-top:0;
    
 }
-& > div > div > h1 {
+& h1 {
     font-size:62px;
     color:var(--colors-headings);
     font-weight:400;
@@ -45,6 +45,16 @@ align-items:center;
 pre > .mobile {
     display:none;
 }
+.codewars-logo {
+    width:35px;
+    height:35px;
+}
+.codewars-block {
+    display:flex;
+    column-gap:15px;
+    align-items:center;
+    margin-top:-15px;
+}
 @media (max-device-width:768px) {
     & {
         display:block;
@@ -64,6 +74,14 @@ pre > .mobile {
 `
 
 function Homepage() {
+    const [kyu, setKyu] = useState(null)
+    useEffect(()=> {
+        axios.get('https://www.codewars.com/api/v1/users/nessaj9698')
+        .then(response => {
+            console.log(response.data.ranks.overall.name)
+            setKyu(response.data.ranks.overall.name)
+        })
+    }, [])
     return (
         <StyledHomepage>
 
@@ -76,6 +94,10 @@ function Homepage() {
                         <CodeBlock className='language-js desktop'>
                             <p>const githubLink = <a href='https://github.com/nessaj9698'>"https://github.com/nessaj9698"</a></p>
                         </CodeBlock>
+                        <div className="codewars-block">
+                            <img src={codewarsLogo} alt="" className='codewars-logo'/>
+                            <a href='https://www.codewars.com/users/nessaj9698'><p>Codewars: {kyu}</p></a>
+                        </div>
                     </div>
                     <div className="mobile">
                         <div className='language-js mobile'>
