@@ -40,6 +40,7 @@ code {
 
 pre {
   max-width:100%;
+  background-color:unset !important;
 }
 pre[class*="language-"] {
   padding-left:0 !important;
