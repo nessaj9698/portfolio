@@ -15,6 +15,7 @@ export const StyledPostPage = styled.div`
         row-gap:60px;
         padding-left:130px;
         padding-top:115px;
+        padding-bottom:30px;
     }
   }
   .projects-item {
@@ -53,6 +54,8 @@ export const StyledPostPage = styled.div`
       height:145px;
       border-radius:15px 15px 0 0;
       max-width:100%;
+      width:100%;
+      object-fit:cover;
   }
   .icon {
       width:25px;

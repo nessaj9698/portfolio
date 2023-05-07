@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import SimpleMDE from 'react-simplemde-editor'
-import "easymde/dist/easymde.min.css";
+// import SimpleMDE from 'react-simplemde-editor'
+
 import {TextField} from '@mui/material'
 import axios from '../../../api/axios/index'
 import styled from 'styled-components'
@@ -78,7 +78,7 @@ function AddPost() {
     onChange={(e) => {setExcerpt(e.target.value)}}
     label={'Отрывок'}
     />
-      <SimpleMDE value={text} onChange={onChange} options={options} />
+      {/* <SimpleMDE value={text} onChange={onChange} options={options} /> */}
       <input type="submit" value="Отправить пост" onClick={onSubmit}/>
     </StyledAddPost>
   )
