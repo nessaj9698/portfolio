@@ -65,7 +65,6 @@ const MainMenu = () => {
                 <Link to="/" className="homelink">Home</Link>
                 <NavLink to="/about" className="pageNavi">_about-me</NavLink>
                 <NavLink to="/projects" className="pageNavi">_projects</NavLink>
-                <NavLink to="/blog" className="pageNavi">_blog</NavLink>
             </ul>
 
             <Burger
